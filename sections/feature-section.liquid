@@ -14,7 +14,7 @@
        <div class="feature-item">
         {% case block.type %}
           {%- when 'feature' -%}
-           <img src="{{  block.settings.image | image_url }}" width="36" height="36" alt="{{ block.settings.image }}" />
+           <img src="{{ block.settings.image | image_url }}" width="36" height="36" alt="{{ block.settings.image }}" loading="lazy" />
          <h6 class="h6 feature-item__header">{{ block.settings.feature-title }}</h6>
          <p class="feature-item__header">{{ block.settings.feature-desc }}</p>
          {%- endcase -%}
@@ -25,41 +25,41 @@
 </div>
 
 {% schema %}
-  {
-    "name": "feature-section",
-    "settings": [
-		{
-	      "type": "text",
-		  "id": "feature-section-header",
-		  "default": "Any uPet ID gives you",
-		  "label": "Feature Section Header"	
-		}
-	],
-	"blocks": [
-		{
-			"type": "feature",
-			"name": "Feature",
-			"settings": [
-				 {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Feature Image"
-                  },
-                  {
-                    "type": "text",
-                    "id": "feature-title",
-                    "default": "Feature title",
-                    "label": "Feature Title"
-                  },
-                  {
-                    "type": "richtext",
-                    "id": "feature-desc",
-					"default": "<p>Put here the feature description</p>",
-                    "label": "feature-desc"
-                  }
-			]
-		}
-	]
-  }
+{
+  "name": "feature-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "feature-section-header",
+      "default": "Any uPet ID gives you",
+      "label": "Feature Section Header"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Feature Image"
+        },
+        {
+          "type": "text",
+          "id": "feature-title",
+          "default": "Feature title",
+          "label": "Feature Title"
+        },
+        {
+          "type": "richtext",
+          "id": "feature-desc",
+          "default": "<p>Put here the feature description</p>",
+          "label": "feature-desc"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
