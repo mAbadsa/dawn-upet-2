@@ -23,8 +23,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_1.png",
             "feature-title": "Unlimited contact details",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#ffffff",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>uPet lets you add vets, breeders, friends and family to your pet’s profile!r<\/p>"
           }
         },
@@ -33,8 +33,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_2.png",
             "feature-title": "Instant found location alert",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#4B4B4B",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>Notifications are sent immediately to all linked emergency contacts numbers if someone finds your pet.<\/p>"
           }
         },
@@ -43,8 +43,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_3.png",
             "feature-title": "24\/7 found pet hotline",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#4B4B4B",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>A real human helper to speak to if no one answers when someone finds your pet.<\/p>"
           }
         },
@@ -53,8 +53,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_4.png",
             "feature-title": "Amber Alert",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#4B4B4B",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>Alert your neighborhood and surrounding shelters at the click of a button if you loose your pet.<\/p>"
           }
         },
@@ -63,8 +63,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_5.png",
             "feature-title": "Lost Posters",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#4B4B4B",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>Pet parents can instantly create  lost posters to print and share on social media.<\/p>"
           }
         },
@@ -73,8 +73,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/feature_icon_6.png",
             "feature-title": "Peace of mind",
-            "item-title-font-color": "#4B4B4B",
-            "item-body-font-color": "#4B4B4B",
+            "item-title-font-color": "#4b4b4b",
+            "item-body-font-color": "#4b4b4b",
             "feature-desc": "<p>If your pet goes missing, they have the right protection to get them home fast.<\/p>"
           }
         }
@@ -89,7 +89,7 @@
       ],
       "settings": {
         "feature-section-header": "Any uPet ID gives you",
-        "heading-font-color": "#4B4B4B"
+        "heading-font-color": "#4b4b4b"
       }
     },
     "image_banner": {
