@@ -25,13 +25,41 @@
         "section_background_1": "#f9f9f9",
         "heading": "Superpowered pet ID system",
         "sub-heading": "Every ID your pet needs linked to their whole pack",
-        "button_lable": "asdsdsfdfd",
+        "button_lable_1": "SHOP NOW",
         "link_route": "\/",
         "hero_section_image": "shopify:\/\/shop_images\/hero-section-image.png",
         "image_position": "right",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
+      }
+    },
+    "feature_section": {
+      "type": "feature-section",
+      "blocks": {
+        "149d7088-a1c1-4af9-8251-f92df094e666": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png",
+            "feature-title": "Feature title",
+            "feature-desc": "<p>Put here the feature description<\/p>"
+          }
+        },
+        "2765a1b8-0480-4996-8101-75384af40fa8": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-section-image.png",
+            "feature-title": "Feature title",
+            "feature-desc": "<p>Put here the feature description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "149d7088-a1c1-4af9-8251-f92df094e666",
+        "2765a1b8-0480-4996-8101-75384af40fa8"
+      ],
+      "settings": {
+        "feature-section-header": "Any uPet ID gives you"
       }
     },
     "image_banner": {
@@ -282,6 +310,7 @@
   },
   "order": [
     "main_hero_shot",
+    "feature_section",
     "image_banner",
     "featured_collection",
     "collage",
