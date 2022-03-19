@@ -27,7 +27,7 @@
 .hero-image__pug, .hero-image__pug img {
   width: 100%;
   height: auto;
-  padding: 11px 16px 7px 9px;
+  padding: 5px 16px 7px 9px;
 }
 
 .left-container {
@@ -38,6 +38,7 @@
   align-items: flex-start;
   flex-grow: 1;
   padding-right: 204px;
+  padding-bottom: 15px;
   color: var(--text-color-primary-light);
 }
 

@@ -8,7 +8,7 @@
 }
 
 .feature-section__header .h2 {
-  margin-block-start: 2rem;
+  margin-block-start: 2.6rem;
   margin-block-end: 5.1rem;
 }
 
@@ -19,7 +19,7 @@
 
 .feature-item__body {
   color: inherit;
-  font-size: 16px;
+  font-size: 1.279rem;
   line-height: 24px;
   letter-spacing: normal;
 }
@@ -28,7 +28,7 @@
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 84px;
-  grid-row-gap: 60px;
+  grid-row-gap: 46px;
 }
 
 

@@ -1,6 +1,5 @@
 .hero-header {
-  padding-bottom: 32px;
-  padding-top: 28px;
+  padding-bottom: 6px;
   padding-inline: 5.5rem;
 }
 
@@ -8,11 +7,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 18px
 }
 
 .hero-header__logo {
   display: flex;
   min-height: 34px;
+}
+
+.hero-header__signin a {
+  /* padding-bottom: 5px; */
+  padding: 0;
+  font-size: 13.33px;
 }
 
 @media screen and (max-width: 991px) {

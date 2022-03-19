@@ -17,6 +17,14 @@
    	   </div>
       {% endfor %}
     </div>
+    {%- for block in section.blocks -%}
+      <div class="feature-item">
+       {% case block.type %}
+         {%- when 'button' -%}
+          <button class="button show-upet_btn" style="background-color: {{ block.settings.button-background-color }}">{{ block.settings.button-label }}</button>
+         {%- endcase -%}
+       </div>
+     {% endfor %}
   </div>
 </div>
 
@@ -70,6 +78,24 @@
           "id": "feature-desc",
           "default": "Put here the feature description",
           "label": "feature-desc"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Feature Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button-label",
+          "default": "SHOP NOW",
+          "label": "Button Label"
+        },
+        {
+          "type": "color",
+          "id": "button-background-color",
+          "default": "#02e0b1",
+          "label": "Button Background Color"
         }
       ]
     }
