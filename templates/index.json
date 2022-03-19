@@ -77,6 +77,13 @@
             "item-body-font-color": "#4b4b4b",
             "feature-desc": "If your pet goes missing, they have the right protection to get them home fast."
           }
+        },
+        "90f15f9c-cb42-4a61-a644-240b0df09b4c": {
+          "type": "button",
+          "settings": {
+            "button-label": "SHOP NOW",
+            "button-background-color": "#02e0b1"
+          }
         }
       },
       "block_order": [
@@ -85,7 +92,8 @@
         "a0d167a2-22d5-4958-8067-b98d1936e61d",
         "361edbbb-34dc-4439-bc15-bfd0f749bde3",
         "e3857ee4-4e08-410f-b18e-09866dbb9695",
-        "0412cc7d-ab34-415c-b337-38be43cebba5"
+        "0412cc7d-ab34-415c-b337-38be43cebba5",
+        "90f15f9c-cb42-4a61-a644-240b0df09b4c"
       ],
       "settings": {
         "feature-section-header": "Any uPet ID gives you",
