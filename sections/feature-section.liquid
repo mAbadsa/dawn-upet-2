@@ -11,8 +11,8 @@
         {% case block.type %}
           {%- when 'feature' -%}
            <img src="{{ block.settings.image | image_url }}" width="36" height="36" alt="{{ block.settings.image }}" loading="lazy" />
-         <h6 class="h6 feature-item__header" style="color: {{ section.settings.item-title-font-color }};">{{ block.settings.feature-title }}</h6>
-         <p class="feature-item__header" style="color: {{ section.settings.item-body-font-color }};">{{ block.settings.feature-desc }}</p>
+         <h6 class="h6 feature-item__header" style="color: {{ block.settings.item-title-font-color }};">{{ block.settings.feature-title }}</h6>
+         <p class="feature-item__header" style="color: {{ block.settings.item-body-font-color }};">{{ block.settings.feature-desc }}</p>
          {%- endcase -%}
    	   </div>
       {% endfor %}
