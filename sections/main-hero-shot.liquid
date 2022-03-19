@@ -1,0 +1,255 @@
+<!-- <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'"> -->
+{{ 'main-hero-shot.css' | asset_url | stylesheet_tag }}
+
+<!-- <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript> -->
+<noscript>{{ 'main-hero-shot.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="hero-section" style="background-color: {{ section.settings.section_background_1 }};">
+  <div class="content-width">
+    <div class="hero-content image-position_{{ section.settings.image_position}}">
+      <div class="left-container {% if section.settings.image_position == "left" %}padding-left{% else %} padding-right{% endif %}">
+        <h1 class="h1">{{ section.settings.heading }}</h1>
+        <h5 class="h5">{{ section.settings.sub-heading }}</h5>
+        <button class="button show-upet_btn">{{ section.settings.button_lable_1 }}</button>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image__pug">
+          <img src="{{ section.settings.hero_section_image | image_url }}" width="568" height="600" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    <div class="rich-text__blocks">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          {%- when 'text' -%}
+            <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          {%- when 'button' -%}
+            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+              {{ block.settings.hero_section_image | escape }}
+            </a>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "main-hero-shot",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+	{
+      "type": "color",
+      "id": "section_background_1",
+      "default": "#F9F9F9",
+      "label": "Section Background Color",
+      "info": "Section Background Color"
+    },
+	{
+      "type": "image_picker",
+      "id": "section_background_image",
+      "label": "Section Background Image"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "default": "Superpowered pet ID system",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "sub-heading",
+      "default": "Every ID your pet needs linked to their whole pack",
+      "label": "Sub Heading"
+    },
+	{
+      "type": "text",
+      "id": "button_lable_1",
+      "default": "SHOP NOW",
+      "label": "Button Name"
+    },
+    {
+      "type": "select",
+      "id": "link_route",
+      "options": [
+        {
+          "value": "/product",
+          "label": "Product"
+        },
+        {
+          "value": "/cart",
+          "label": "Cart"
+        },
+        {
+          "value": "/",
+          "label": "Home Page"
+        }
+      ],
+      "default": "/",
+      "label": "Button Url"
+    },
+	{
+      "type": "image_picker",
+      "id": "hero_section_image",
+      "label": "Hero Section Image"
+    },
+    {
+      "type": "radio",
+      "id": "image_position",
+      "default": "right",
+      "label": "image_position",
+	  "options": [
+	   {
+		"value": "left",
+		"label": "Left"
+	   },
+	   {
+		"value": "right",
+		"label": "Right"
+	   }
+	  ]
+    },
+	{
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.rich-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Talk about your brand",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.rich-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.rich-text.blocks.button.settings.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.rich-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.rich-text.blocks.button.settings.button_style_secondary.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.rich-text.presets.name",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

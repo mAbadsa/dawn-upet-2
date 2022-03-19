@@ -1,0 +1,144 @@
+.hero-section {
+  padding-bottom: 28px;
+  padding-inline: 5.5rem;
+  background-color: var(--color-base-background-2);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-position_right {
+   grid-template-areas: "a b";
+}
+
+.image-position_left {
+   grid-template-areas: "b a";
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  grid-area: b;
+}
+
+.hero-image__pug, .hero-image__pug img {
+  width: 100%;
+  height: auto;
+}
+
+.left-container {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding-right: 100px;
+  color: var(--text-color-primary-light);
+}
+
+.padding-left {
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+.padding-right {
+  padding-right: 100px;
+}
+
+.left-container .h1 {
+  margin: 0;
+  color: inherit;
+  width: 100%;
+}
+
+.left-container .h5 {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: inherit;
+  width: 100%;
+}
+
+.left-container .show-upet_btn {
+  width: min(100%, var(--button-size-large));
+  height: 56px;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.button::after, .button::before {
+  box-shadow: none;
+}
+
+
+@media screen and (max-width: 991px) {
+  .hero-section {
+    padding-inline: 5.5rem;
+  }
+  
+  .hero-content {
+    grid-template-areas: "a" "b";
+    grid-template-columns: 1fr;
+  }
+  
+  .left-container {
+    padding-right: 76px;
+    text-align: left;
+    text-align: center;
+  }
+  
+  .left-container .show-upet_btn {
+    margin-bottom: 44px;
+    width: 100%;
+  }
+  .padding-left {
+    padding-left: 76px;
+    padding-right: 0;
+  }
+
+  .padding-right {
+    padding-right: 76px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding-inline: 1.5rem;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+  .left-container {
+    align-items: center;
+    padding-right: 0;
+    text-align: center;
+  }
+  .left-container .show-upet_btn {
+    margin-bottom: 44px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .hero-section {
+    padding-inline: 1.5rem;
+    padding-top: 20px;
+  }
+  .left-container .h1 {
+    font-size: 33.18px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .hero-section {
+    padding-block: 20px;
+  }
+}

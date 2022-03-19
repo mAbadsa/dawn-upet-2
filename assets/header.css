@@ -1,0 +1,35 @@
+.hero-header {
+  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-inline: 5.5rem;
+}
+
+.hero-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-header__logo {
+  display: flex;
+  min-height: 34px;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-header {
+    padding-inline: 5.5rem;
+  }  
+}
+
+@media screen and (max-width: 767px) {
+  .hero-header {
+    padding-inline: 1.5rem;
+  } 
+}
+
+@media screen and (max-width: 427px) {
+  .hero-header {
+    padding-inline: 1.5rem;
+  }  
+
+}

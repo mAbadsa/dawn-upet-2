@@ -1,0 +1,126 @@
+{%- style -%}
+  .announcement-bar {
+     padding-inline: 5.5rem;
+  }
+  @media screen and (max-width: 991px) {
+    .announcement-bar {
+      padding-inline: 5.5rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .announcement-bar {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 427px) {
+    .announcement-bar {
+      padding-inline: 1.5rem;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="announcement-bar"
+  role="region"
+  aria-label="{{ 'sections.header.announcement' | t }}"
+  {{
+  block.shopify_attributes
+  }}
+  style="background-color: {{ section.settings.background_color}};"
+>
+  <div class="content-width announcement-bar__layout">
+    <div class="announcement-bar__phone-section">
+      <span class="announcement-bar__phone-section-question">{{ section.settings.left_text }}</span>
+      <span class="icon__box">
+        {% render 'icon-phone' %}
+      </span>
+      <span>{{ section.settings.phone }}</span>
+    </div>
+    <div class="announcement-bar__flag-section">
+      <span class="icon__box">{% render 'icon-flag' %}</span>
+      <span>EN</span>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "color",
+	  "id": "background_color",
+      "default": "#F0F0F0",
+      "label": "Background Color"
+    },
+	{
+      "type": "text",
+	  "id": "left_text",
+      "default": "Question?",
+      "label": "Left Text"
+    },
+	{
+      "type": "text",
+	  "id": "phone",
+      "default": "(929) 566-7788",
+      "label": "Phone Number"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "background-1",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__3.label"
+            },
+            {
+              "value": "accent-1",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__4.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__5.label"
+            }
+          ],
+          "default": "accent-1",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}
