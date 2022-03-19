@@ -1,0 +1,40 @@
+.feature-section {
+  padding-bottom: 56px;
+  padding-top: 64px;
+  padding-inline: 5.5rem;
+}
+
+.feature-section__header {
+  text-align: center;
+}
+
+.features-grid {
+	display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow: row;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .feature-section {
+    padding-inline: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-section {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .feature-section {
+    padding-inline: 1.5rem;
+    padding-top: 20px;
+  }
+
+  .feature-section__header .h2 {
+    font-size: 27.65px;
+  }
+}

@@ -1,13 +1,9 @@
-{%- style -%}
- .features-grid {
-	display: grid;
-}
-{%- endstyle -%}
+{{ "feature-section.css" | asset_url | stylesheet_tag }}
 
 <div class="feature-section">
   <div class="content-width">
     <div class="feature-section__header">
-      <h2 class="h2">{{ section.settings.feature-section-header }}</h2>
+      <h2 class="h2" style="color: {{ section.settings.heading-font-color }};">{{ section.settings.feature-section-header }}</h2>
     </div>
     <div class="features-grid">
       {%- for block in section.blocks -%}
@@ -15,8 +11,8 @@
         {% case block.type %}
           {%- when 'feature' -%}
            <img src="{{ block.settings.image | image_url }}" width="36" height="36" alt="{{ block.settings.image }}" loading="lazy" />
-         <h6 class="h6 feature-item__header">{{ block.settings.feature-title }}</h6>
-         <p class="feature-item__header">{{ block.settings.feature-desc }}</p>
+         <h6 class="h6 feature-item__header" style="color: {{ section.settings.item-title-font-color }};">{{ block.settings.feature-title }}</h6>
+         <p class="feature-item__header" style="color: {{ section.settings.item-body-font-color }};">{{ block.settings.feature-desc }}</p>
          {%- endcase -%}
    	   </div>
       {% endfor %}
@@ -33,6 +29,12 @@
       "id": "feature-section-header",
       "default": "Any uPet ID gives you",
       "label": "Feature Section Header"
+    },
+    {
+      "type": "color",
+      "id": "heading-font-color",
+      "default": "#4B4B4B",
+      "label": "Section Heading Font Color"
     }
   ],
   "blocks": [
@@ -50,6 +52,18 @@
           "id": "feature-title",
           "default": "Feature title",
           "label": "Feature Title"
+        },
+        {
+          "type": "color",
+          "id": "item-title-font-color",
+          "default": "#4B4B4B",
+          "label": "Item Title Color"
+        },
+        {
+          "type": "color",
+          "id": "item-body-font-color",
+          "default": "#4B4B4B",
+          "label": "Item Body Color"
         },
         {
           "type": "richtext",
