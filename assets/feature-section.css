@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.feature-item__body p {
+  color: inherit;
+}
+
 .features-grid {
 	display: grid;
   grid-template-columns: auto auto auto;
