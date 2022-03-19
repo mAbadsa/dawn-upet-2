@@ -2,25 +2,6 @@
   "sections": {
     "main_hero_shot": {
       "type": "main-hero-shot",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
       "settings": {
         "section_background_1": "#f9f9f9",
         "heading": "Superpowered pet ID system",
