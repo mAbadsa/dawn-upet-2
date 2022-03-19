@@ -20,7 +20,7 @@
 
 <div class="hero-section" style="background-color: {{ section.settings.section_background_1 }};">
   <div class="content-width">
-    <div class="hero-content image-position_{{ section.settings.image_position}}">
+    <div class="hero-content image-position_{{ section.settings.image_position }}">
       <div class="left-container {% if section.settings.image_position == "left" %}padding-left{% else %} padding-right{% endif %}">
         <h1 class="h1">{{ section.settings.heading }}</h1>
         <h5 class="h5">{{ section.settings.sub-heading }}</h5>
@@ -35,57 +35,37 @@
   </div>
 </div>
 
-
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
-  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div class="rich-text__blocks">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'heading' -%}
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-          {%- when 'text' -%}
-            <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-          {%- when 'button' -%}
-            <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-              {{ block.settings.hero_section_image | escape }}
-            </a>
-        {%- endcase -%}
-      {%- endfor -%}
-    </div>
-  </div>
-</div>
-
 {% schema %}
 {
   "name": "main-hero-shot",
   "tag": "section",
   "class": "section",
   "settings": [
-	{
+    {
       "type": "color",
       "id": "section_background_1",
       "default": "#F9F9F9",
       "label": "Section Background Color",
       "info": "Section Background Color"
     },
-	{
+    {
       "type": "image_picker",
       "id": "section_background_image",
       "label": "Section Background Image"
     },
-	{
+    {
       "type": "text",
       "id": "heading",
       "default": "Superpowered pet ID system",
       "label": "Heading"
     },
-	{
+    {
       "type": "text",
       "id": "sub-heading",
       "default": "Every ID your pet needs linked to their whole pack",
       "label": "Sub Heading"
     },
-	{
+    {
       "type": "text",
       "id": "button_lable_1",
       "default": "SHOP NOW",
@@ -111,7 +91,7 @@
       "default": "/",
       "label": "Button Url"
     },
-	{
+    {
       "type": "image_picker",
       "id": "hero_section_image",
       "label": "Hero Section Image"
@@ -121,18 +101,18 @@
       "id": "image_position",
       "default": "right",
       "label": "image_position",
-	  "options": [
-	   {
-		"value": "left",
-		"label": "Left"
-	   },
-	   {
-		"value": "right",
-		"label": "Right"
-	   }
-	  ]
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
     },
-	{
+    {
       "type": "checkbox",
       "id": "full_width",
       "default": true,

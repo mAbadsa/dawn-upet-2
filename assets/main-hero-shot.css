@@ -1,5 +1,4 @@
 .hero-section {
-  padding-bottom: 28px;
   padding-inline: 5.5rem;
 }
 
@@ -28,6 +27,7 @@
 .hero-image__pug, .hero-image__pug img {
   width: 100%;
   height: auto;
+  padding: 11px 16px 7px 9px;
 }
 
 .left-container {
@@ -37,17 +37,17 @@
   justify-content: center;
   align-items: flex-start;
   flex-grow: 1;
-  padding-right: 100px;
+  padding-right: 204px;
   color: var(--text-color-primary-light);
 }
 
 .padding-left {
-  padding-left: 100px;
+  padding-left: 204px;
   padding-right: 0;
 }
 
 .padding-right {
-  padding-right: 100px;
+  padding-right: 204px;
 }
 
 .left-container .h1 {
@@ -58,14 +58,14 @@
 
 .left-container .h5 {
   margin-top: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   font-weight: 400;
   color: inherit;
   width: 100%;
 }
 
 .left-container .show-upet_btn {
-  width: min(100%, var(--button-size-large));
+  width: var(--button-size-large);
   height: 56px;
   border: none;
   font-size: 16px;
@@ -133,11 +133,5 @@
   }
   .left-container .h1 {
     font-size: 33.18px;
-  }
-}
-
-@media screen and (min-width: 428px) {
-  .hero-section {
-    padding-block: 20px;
   }
 }

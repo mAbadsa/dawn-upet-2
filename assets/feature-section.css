@@ -1,8 +1,6 @@
 .feature-section {
-  padding-bottom: 56px;
-  padding-top: 64px;
   padding-inline: 5.5rem;
-  padding-block: 44px;
+  padding-block: 34px;
 }
 
 .feature-section__header {
@@ -11,7 +9,7 @@
 
 .feature-section__header .h2 {
   margin-block-start: 2rem;
-  margin-block-end: 6rem;
+  margin-block-end: 5.1rem;
 }
 
 .feature-item__header .h6 {
@@ -19,8 +17,11 @@
   margin-block-end: 1.6rem;
 }
 
-.feature-item__body p {
+.feature-item__body {
   color: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
 }
 
 .features-grid {
