@@ -5,6 +5,7 @@
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: -6px;
 }
 
 .image-position_right {
@@ -77,10 +78,42 @@
   box-shadow: none;
 }
 
+@media screen and (min-width: 992px) {
+  .hero-section {
+    padding-bottom: 120px
+  }
+  
+  .left-container {
+    padding-right: 100px;
+    padding-top: 120px
+  }
+
+  .left-container .h1 {
+    width: 85%;
+  }
+
+  .left-container .show-upet_btn {
+    width: 352px;
+  }
+
+  .hero-image {
+    position: relative;
+  }
+
+  .hero-image__pug, .hero-image__pug img {
+    position: absolute;
+    width: 447px;
+    height: auto;
+    top: 6px;
+    right: 10px;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   .hero-section {
     padding-inline: 5.5rem;
+    padding-top: 11rem;
   }
   
   .hero-content {

@@ -1,6 +1,6 @@
 .feature-section {
   padding-inline: 5.5rem;
-  padding-block: 34px;
+  padding-block: 28px;
 }
 
 .feature-section__header {
@@ -43,6 +43,18 @@
   border: none;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  .feature-item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .features-grid {
+    grid-column-gap: 50px;
+    grid-row-gap: 95px;
+}
 }
 
 @media screen and (max-width: 991px) {
