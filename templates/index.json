@@ -37,26 +37,62 @@
     "feature_section": {
       "type": "feature-section",
       "blocks": {
-        "149d7088-a1c1-4af9-8251-f92df094e666": {
+        "d4c4e7e6-c1e4-40d4-bcbf-9a14ead75d4f": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo.png",
-            "feature-title": "Feature title",
-            "feature-desc": "<p>Put here the feature description<\/p>"
+            "image": "shopify:\/\/shop_images\/feature_icon_1.png",
+            "feature-title": "Unlimited contact details",
+            "feature-desc": "<p>uPet lets you add vets, breeders, friends and family to your pet’s profile!r<\/p>"
           }
         },
-        "2765a1b8-0480-4996-8101-75384af40fa8": {
+        "69cacaad-66b1-4ccb-9782-e0cbe7a5f79d": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-section-image.png",
-            "feature-title": "Feature title",
-            "feature-desc": "<p>Put here the feature description<\/p>"
+            "image": "shopify:\/\/shop_images\/feature_icon_2.png",
+            "feature-title": "Instant found location alert",
+            "feature-desc": "<p>Notifications are sent immediately to all linked emergency contacts numbers if someone finds your pet.<\/p>"
+          }
+        },
+        "a0d167a2-22d5-4958-8067-b98d1936e61d": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feature_icon_3.png",
+            "feature-title": "24\/7 found pet hotline",
+            "feature-desc": "<p>A real human helper to speak to if no one answers when someone finds your pet.<\/p>"
+          }
+        },
+        "361edbbb-34dc-4439-bc15-bfd0f749bde3": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feature_icon_4.png",
+            "feature-title": "Amber Alert",
+            "feature-desc": "<p>Alert your neighborhood and surrounding shelters at the click of a button if you loose your pet.<\/p>"
+          }
+        },
+        "e3857ee4-4e08-410f-b18e-09866dbb9695": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feature_icon_5.png",
+            "feature-title": "Lost Posters",
+            "feature-desc": "<p>Pet parents can instantly create  lost posters to print and share on social media.<\/p>"
+          }
+        },
+        "0412cc7d-ab34-415c-b337-38be43cebba5": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/feature_icon_6.png",
+            "feature-title": "Peace of mind",
+            "feature-desc": "<p>If your pet goes missing, they have the right protection to get them home fast.<\/p>"
           }
         }
       },
       "block_order": [
-        "149d7088-a1c1-4af9-8251-f92df094e666",
-        "2765a1b8-0480-4996-8101-75384af40fa8"
+        "d4c4e7e6-c1e4-40d4-bcbf-9a14ead75d4f",
+        "69cacaad-66b1-4ccb-9782-e0cbe7a5f79d",
+        "a0d167a2-22d5-4958-8067-b98d1936e61d",
+        "361edbbb-34dc-4439-bc15-bfd0f749bde3",
+        "e3857ee4-4e08-410f-b18e-09866dbb9695",
+        "0412cc7d-ab34-415c-b337-38be43cebba5"
       ],
       "settings": {
         "feature-section-header": "Any uPet ID gives you"
