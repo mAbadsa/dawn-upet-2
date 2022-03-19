@@ -18,7 +18,7 @@
       {% endfor %}
     </div>
     {%- for block in section.blocks -%}
-      <div class="feature-item">
+      <div class="feature-button-container">
        {% case block.type %}
          {%- when 'button' -%}
           <button class="button show-upet_btn" style="background-color: {{ block.settings.button-background-color }}">{{ block.settings.button-label }}</button>
