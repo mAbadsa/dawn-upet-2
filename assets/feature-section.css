@@ -51,6 +51,10 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
+  .feature-section {
+    padding-inline: 7.2rem;
+  }
+
   .feature-item img {
     width: 36px;
     height: 36px;
@@ -59,15 +63,15 @@
   .feature-item__header {
     margin-block-start: 0.5rem;
     margin-block-end: 0rem;
-    width: 60%;
+    width: 70%;
   }
 
   .feature-item__body {
-    padding-right: 36px;
+    padding-right: 0px;
   }
 
   .features-grid {
-    grid-column-gap: 50px;
+    grid-column-gap: 83px;
     grid-row-gap: 42px;
   }
 
@@ -75,12 +79,11 @@
     line-height: 44px;
     margin-bottom: 58px;
     margin-top: 34px;
-    margin-right: 34px
   }
 
   .feature-button-container  .show-upet_btn {
     width: 336px;
-    margin-right: 36px;
+    /* margin-right: 36px; */
   }
   
 }

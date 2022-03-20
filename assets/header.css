@@ -23,11 +23,11 @@
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
   .hero-header {
-    padding-inline: 5.5rem;
+    padding-inline: 7.3rem;
   }
 
   .hero-header__signin {
-    margin-right: 34px
+    margin-right: 0px
   }
 
   .hero-header-container {

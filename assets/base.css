@@ -2249,6 +2249,11 @@ input[type='checkbox'] {
   letter-spacing: 0.1rem;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .announcement-bar {
+   padding-inline: 7.3rem;
+}
+
 /* section-header */
 #shopify-section-header {
   z-index: 3;
