@@ -7,12 +7,9 @@
         "heading": "Superpowered pet ID system",
         "sub-heading": "Every ID your pet needs linked to their whole pack",
         "button_lable_1": "SHOP NOW",
-        "link_route": "\/",
+        "link_route": "shopify:\/\/collections\/all",
         "hero_section_image": "shopify:\/\/shop_images\/hero-section-image.png",
-        "image_position": "right",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "image_position": "right"
       }
     },
     "feature_section": {
