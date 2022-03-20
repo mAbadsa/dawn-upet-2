@@ -21,7 +21,7 @@
   font-size: 13.33px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) and (max-width: 1279px) {
   .hero-header {
     padding-inline: 5.5rem;
   }
@@ -29,12 +29,51 @@
   .hero-header__signin {
     margin-right: 34px
   }
+
+  .hero-header-container {
+    padding-top: 20px
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .hero-header {
-    padding-inline: 1.5rem;
-  } 
+    padding-inline: 8.8rem;
+  }
+
+  .hero-header .header__heading-link {
+    padding: 0%;
+  }
+
+  .hero-header .content-width {
+    margin-inline-start: 0;
+  }
+
+  .hero-header__signin {
+    /* margin-right: -8px */
+    padding-bottom: 8px;
+  }
+
+  .hero-header-container {
+    padding-top: 28px
+  }
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .hero-header {
+    padding-inline: 2.4rem;
+  }
+
+  .hero-header-container {
+    padding-block-start: 1.8rem;
+  }
+
+  .hero-header .hero-header__logo .header__heading-link {
+    padding: 0;
+  }
+
+  .hero-header .hero-header__logo svg {
+    width: 91px;
+  }
 }
 
 @media screen and (max-width: 427px) {

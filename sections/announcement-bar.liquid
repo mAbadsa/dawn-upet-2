@@ -1,10 +1,47 @@
 {%- style -%}
+
   .announcement-bar {
      padding-inline: 5.5rem;
   }
-  @media screen and (max-width: 991px) {
+
+  .announcement-bar .icon-phone {
+    width: 13.38px;
+    height: 13.43px;
+  }
+
+  .announcement-bar .icon__box {
+    display: flex;
+    align-items: center;
+    padding-inline: 11px;
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1279px) {
+    .announcement-bar {
+     padding-inline: 8rem;
+  }
+
+    .hero-header__signin {
+      margin-right: 8px
+    }
+
+    .hero-header-container {
+      padding-top: 20px
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .announcement-bar {
+      padding-inline: 8.9rem;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
     .announcement-bar {
       padding-inline: 5.5rem;
+    }
+
+    .announcement-bar__flag-section {
+      margin-right: 34px;
     }
   }
 
@@ -28,7 +65,7 @@
   {{
   block.shopify_attributes
   }}
-  style="background-color: {{ section.settings.background_color}};"
+  style="background-color: {{ section.settings.background_color }};"
 >
   <div class="content-width announcement-bar__layout">
     <div class="announcement-bar__phone-section">
@@ -51,19 +88,19 @@
   "settings": [
     {
       "type": "color",
-	  "id": "background_color",
+      "id": "background_color",
       "default": "#F0F0F0",
       "label": "Background Color"
     },
-	{
+    {
       "type": "text",
-	  "id": "left_text",
-      "default": "Question?",
+      "id": "left_text",
+      "default": "Questions?",
       "label": "Left Text"
     },
-	{
+    {
       "type": "text",
-	  "id": "phone",
+      "id": "phone",
       "default": "(929) 566-7788",
       "label": "Phone Number"
     }

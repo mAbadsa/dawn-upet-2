@@ -348,13 +348,6 @@
   },
   "order": [
     "main_hero_shot",
-    "feature_section",
-    "image_banner",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn",
-    "1647618237055002ca",
-    "16476206463cce7398"
+    "feature_section"
   ]
 }

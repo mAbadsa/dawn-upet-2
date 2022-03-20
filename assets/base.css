@@ -489,7 +489,7 @@ h6,
   color: rgba(var(--color-foreground), 0.75);
   margin-block-start: 4px;
   margin-block-end: 1.2em;
-  font-size: calc(var(--font-heading-scale) * 1.279rem);
+  font-size: calc(var(--font-heading-scale) * 1.6rem);
   line-height: 24px;
   letter-spacing: normal;
 }
@@ -1297,6 +1297,8 @@ button.shopify-payment-button__button--unbranded,
   --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
+  overflow: hidden;
+  outline: 0;
 }
 
 .button,
