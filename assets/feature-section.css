@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1279px) {
   .feature-section {
-    padding-inline: 7.2rem;
+    padding-inline: 6.45rem;
   }
 
   .feature-item img {
@@ -76,19 +76,21 @@
   }
 
   .features-grid {
-    grid-column-gap: 83px;
-    grid-row-gap: 42px;
+    grid-column-gap: 85px;
+    grid-row-gap: 41px;
+    margin-left: 11px;
   }
 
   .feature-section__header .h2 {
     line-height: 44px;
     margin-bottom: 58px;
     margin-top: 34px;
+    margin-left: 16px;
   }
 
   .feature-button-container  .show-upet_btn {
     width: 336px;
-    /* margin-right: 36px; */
+    margin-right: -12px;
   }
   
 }
