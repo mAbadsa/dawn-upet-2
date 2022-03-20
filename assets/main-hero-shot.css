@@ -5,7 +5,7 @@
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: -6px;
+  margin-top: 1px;
 }
 
 .image-position_right {

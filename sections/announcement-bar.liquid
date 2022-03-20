@@ -1,13 +1,22 @@
 {%- style -%}
 
   .announcement-bar {
-    font-family: fangsong;
     padding-inline: 7.3rem;
   }
 
   .announcement-bar .icon-phone {
     width: 13.38px;
     height: 13.43px;
+  }
+
+  .announcement-bar__phone-section span.phone-number {
+    font-family: fangsong;
+    letter-spacing: 0.55px;
+  }
+
+  .announcement-bar__phone-section span.phone-number .header__heading-link {
+    color: rgb(var(--color-base-accent-1));
+    text-decoration: none;
   }
 
   .announcement-bar .icon__box {
@@ -18,7 +27,16 @@
 
   @media screen and (min-width: 1280px) {
     .announcement-bar {
-     padding-inline: 8rem;
+     padding-inline: 7.3rem;
+    }
+
+    .announcement-bar__flag-section {
+      margin-right: 0px;
+    }
+
+    .announcement-bar .icon__box {
+    padding-inline: 11px;
+}
   }
 
   @media screen and (min-width: 992px) and (max-width: 1279px) {
@@ -33,6 +51,10 @@
     .hero-header-container {
       padding-top: 20px
     }
+
+    .announcement-bar__flag-section {
+      margin-right: 34px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -41,15 +63,13 @@
     }
   }
 
-  @media screen and (min-width: 992px) {
+  /* @media screen and (min-width: 992px) {
     .announcement-bar {
       padding-inline: 5.5rem;
     }
 
-    .announcement-bar__flag-section {
-      margin-right: 34px;
-    }
-  }
+    
+  } */
 
   @media screen and (max-width: 767px) {
     .announcement-bar {
@@ -79,7 +99,8 @@
       <span class="icon__box">
         {% render 'icon-phone' %}
       </span>
-      <span>{{ section.settings.phone }}</span>
+      <span class="phone-number"><a class="header__heading-link" href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a>
+      </span>
     </div>
     <div class="announcement-bar__flag-section">
       <span class="icon__box">{% render 'icon-flag' %}</span>
